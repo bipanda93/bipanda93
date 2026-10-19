@@ -1,229 +1,68 @@
-# 🧬 Classification ML — SVM vs KNN
-### Breast Cancer Wisconsin Dataset
+<h1 align="center">Franck BIPANDA</h1>
+<h3 align="center">Analytics Engineer & Data Engineer</h3>
 
-> Projet de machine learning supervisé comparant deux algorithmes de classification binaire pour la détection de tumeurs malignes/bénignes.
+<p align="center">
+  <img src="https://img.shields.io/badge/dbt-FF694B?style=flat&logo=dbt&logoColor=white" alt="dbt">
+  <img src="https://img.shields.io/badge/Snowflake-29B5E8?style=flat&logo=snowflake&logoColor=white" alt="Snowflake">
+  <img src="https://img.shields.io/badge/Airflow-017CEE?style=flat&logo=apacheairflow&logoColor=white" alt="Airflow">
+  <img src="https://img.shields.io/badge/Spark-E25A1C?style=flat&logo=apachespark&logoColor=white" alt="Spark">
+  <img src="https://img.shields.io/badge/Kafka-231F20?style=flat&logo=apachekafka&logoColor=white" alt="Kafka">
+  <img src="https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white" alt="Azure">
+  <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat&logo=terraform&logoColor=white" alt="Terraform">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=powerbi&logoColor=black" alt="Power BI">
+</p>
 
-**Auteur :** Bipanda Franck Ulrich  
-**Environnement :** PyCharm | Python 3 | scikit-learn  
-**Date :** Février 2026
-
----
-
-## 📋 Description du Projet
-
-Ce projet implémente et compare deux algorithmes de classification supervisée :
-
-- **SVM** (Support Vector Machine) — `script1.py`
-- **KNN** (K-Nearest Neighbors) — `script2.py`
-
-L'objectif est de prédire si une tumeur est **maligne (0)** ou **bénigne (1)** à partir de 30 features cliniques mesurées par imagerie médicale.
-
----
-
-## 📦 Installation
-
-### Prérequis
-- Python 3.8+
-- PyCharm (recommandé) ou tout autre IDE Python
-
-### Installer les dépendances
-
-```bash
-pip install scikit-learn numpy pandas matplotlib seaborn
-```
-
-### Cloner le projet
-
-```bash
-git clone https://github.com/bipanda-franck-ulrich/classification-ml.git
-cd classification-ml
-```
+<p align="center">
+  📧 <a href="mailto:bipandaf@gmail.com">bipandaf@gmail.com</a>  ·  <a href="https://www.linkedin.com/in/bipanda93">LinkedIn</a>  ·  📍 Île-de-France  ·  🟢 Disponible en CDI
+</p>
 
 ---
 
-## 🗂️ Structure du Projet
+🔧 Pipelines de bout en bout, en batch et en streaming : ingestion, transformation dbt, orchestration, CI/CD et restitution<br>
+☁️ Infrastructure as code sur Azure avec Terraform, entrepôt Snowflake, architecture Medallion<br>
+🛒 7 ans à la tête d'une PME de distribution : je connais le métier derrière les chiffres<br>
+📝 Chaque choix technique est documenté (contexte, alternatives, limites)
 
-```
-classification-ml/
-│
-├── script1.py       # Modèle SVM
-├── script2.py       # Modèle KNN
-└── README.md        # Documentation
-```
+## Projet phare
 
----
+### 🛒 [Leclerc Analytics Engineering](https://github.com/bipanda93/leclerc-analytics-engineering) — pipeline ELT retail de bout en bout
 
-## 🧪 Dataset
+`Airbyte` `Snowflake` `dbt` `Airflow 3` `GitHub Actions` `Power BI`
 
-| Caractéristique | Valeur |
-|----------------|--------|
-| Nom | Breast Cancer Wisconsin |
-| Source | `sklearn.datasets.load_breast_cancer()` |
-| Échantillons | 569 |
-| Features | 30 |
-| Classes | malignant (0) / benign (1) |
-| Split Train/Test | 80% / 20% |
+**4 sources · 10 modèles dbt · 33 tests · Bronze / Silver / Gold · CI dbt isolée · alertes Slack · rapport Power BI 5 pages · 44 décisions d'architecture**
 
----
+Segmentation clients RFM, analyse de panier en SQL (support, confiance, lift), taxonomie de 29 rayons sur 578 000 produits, 1,5 million de transactions, suivi des ventes face à l'inflation INSEE.
 
-## 💻 Codes Sources
+## Autres projets
 
-### Script 1 — SVM (`script1.py`)
+| Projet | Stack | Lien |
+|---|---|---|
+| 🚄 Streaming temps réel SNCF — 166 000 événements, 6 DAGs, 26 ressources Azure *(mémoire)* | Kafka · Spark · Airflow · Terraform · Azure · Power BI · Claude API | [→](https://github.com/bipanda93/sncf-streaming-pipeline) |
+| 🖼️ ETL Base Joconde — 721 629 œuvres des musées de France, temps d'exécution −90 % | Python · Polars · PostgreSQL · dbt · Dagster | [→](https://github.com/bipanda93/ETL-pipeline-Joconde) |
+| 💼 Job Pipeline Automation | Python · PostgreSQL · Airflow · AWS · Terraform | [→](https://github.com/bipanda93/Job_pipeline_automation) |
+| 🗄️ Data lake multi-sources (Olist) | Airflow · MinIO · MongoDB · Redis · Docker | [→](https://github.com/bipanda93/datalake-multi-sources) |
+| 🛍️ E-commerce UCI Online Retail | Airflow · Docker · Jenkins · pytest | [→](https://github.com/bipanda93/airflow-ecommerce-uci) |
 
-```python
-import pandas as pd
-import numpy as np
-from sklearn.svm import SVC
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
-from sklearn.datasets import load_breast_cancer
+## Formation
 
-breast_cancer = load_breast_cancer()
-X = breast_cancer.data
-Y = breast_cancer.target
+**Mastère Data Engineering (RNCP 7)** — Digital School of Paris (2025 – 2026)  ·  **Master 1 Data Science & Business Intelligence** — EDC Paris Business School (2025)
 
-X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
+<details>
+<summary>Voir le parcours</summary>
 
-scaler = StandardScaler()
-X_train = scaler.fit_transform(X_train)
-X_test = scaler.transform(X_test)
+**Expérience**
+- **2017 – 2024** — Cofondateur, Nobu (Libreville, Gabon) : gestion d'une PME, équipe de 3, pilotage des ventes et des stocks par la donnée
+- **2019 – 2020** — Assistant Data Analyst, SING (Libreville, Gabon) : automatisation de pipelines pour le secteur pétrolier (−40 % de temps de traitement), dashboards Power BI
+- **Depuis 2024** — Préparateur de commandes, E.Leclerc
 
-model = SVC(kernel='rbf', C=1.0, gamma='scale')
-model.fit(X_train, Y_train)
-Y_pred = model.predict(X_test)
+**Formation**
+- **2025 – 2026** — Mastère Data Engineering, Digital School of Paris
+- **2024 – 2025** — Master 1 Data Science & Business Intelligence, EDC Paris Business School
+- **2014 – 2018** — Bachelor Computational Science (statistiques appliquées), Zhejiang University of Science and Technology, Hangzhou (Chine)
 
-print("Accuracy :", accuracy_score(Y_test, Y_pred))
-print(confusion_matrix(Y_test, Y_pred))
-print(classification_report(Y_test, Y_pred))
+**Langues** : français, anglais (TOEIC B2)
 
-# Test de plusieurs valeurs de C
-for c in [0.1, 1, 10, 100]:
-    model = SVC(C=c, kernel='rbf')
-    model.fit(X_train, Y_train)
-    y_pred = model.predict(X_test)
-    print("C =", c, "-> Accuracy =", accuracy_score(Y_test, y_pred))
-```
-
----
-
-### Script 2 — KNN (`script2.py`)
-
-```python
-import pandas as pd
-import numpy as np
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
-from sklearn.datasets import load_breast_cancer
-
-breast_cancer = load_breast_cancer()
-X = breast_cancer.data
-Y = breast_cancer.target
-
-X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
-
-scaler = StandardScaler()
-X_train = scaler.fit_transform(X_train)
-X_test = scaler.transform(X_test)
-
-model = KNeighborsClassifier()
-model.fit(X_train, Y_train)
-Y_pred = model.predict(X_test)
-
-print("Accuracy :", accuracy_score(Y_test, Y_pred))
-print(confusion_matrix(Y_test, Y_pred))
-print(classification_report(Y_test, Y_pred))
-
-# Test de plusieurs valeurs de K
-for k in [1, 3, 5, 7, 9]:
-    model = KNeighborsClassifier(n_neighbors=k)
-    model.fit(X_train, Y_train)
-    y_pred = model.predict(X_test)
-    print("K =", k, "-> Accuracy =", accuracy_score(Y_test, y_pred))
-```
-
----
-
-## 📊 Résultats et Métriques
-
-### Accuracy Globale
-
-| Modèle | Meilleur paramètre | Accuracy |
-|--------|-------------------|----------|
-| **SVM** | C = 1 | **98.25%** ✅ |
-| KNN | K = 9 | 96.49% |
-
----
-
-### Matrice de Confusion
-
-**SVM (C=1, avec StandardScaler) :**
-
-|  | Prédit Malin (0) | Prédit Bénin (1) |
-|--|-----------------|-----------------|
-| **Réel Malin (0)** | 41 ✅ | 2 ❌ |
-| **Réel Bénin (1)** | 0 ✅ | 71 ✅ |
-
-**KNN (K=5, avec StandardScaler) :**
-
-|  | Prédit Malin (0) | Prédit Bénin (1) |
-|--|-----------------|-----------------|
-| **Réel Malin (0)** | 40 ✅ | 3 ❌ |
-| **Réel Bénin (1)** | 3 ❌ | 68 ✅ |
-
----
-
-### Rapport de Classification — SVM
-
-| Classe | Précision | Rappel | F1-Score |
-|--------|-----------|--------|----------|
-| malignant (0) | 1.00 | 0.95 | 0.98 |
-| benign (1) | 0.97 | 1.00 | 0.99 |
-| **accuracy** | | | **0.98** |
-
----
-
-### Optimisation des Hyperparamètres
-
-**SVM — Valeurs de C :**
-
-| C | Accuracy |
-|---|----------|
-| 0.1 | 94.74% |
-| **1** | **98.25% ★** |
-| 10 | 97.37% |
-| 100 | 93.86% |
-
-**KNN — Valeurs de K :**
-
-| K | Accuracy |
-|---|----------|
-| 1 | 93.86% |
-| 3 | 94.74% |
-| 5 | 94.74% |
-| 7 | 94.74% |
-| **9** | **96.49% ★** |
-
----
-
-## 🏆 Conclusion
-
-Le **SVM avec C=1 et StandardScaler** est l'algorithme recommandé pour cette tâche :
-
-- ✅ Accuracy de **98.25%** vs 96.49% pour KNN
-- ✅ **0 faux positif** (aucun patient sain diagnostiqué malin à tort)
-- ✅ Seulement **2 faux négatifs** vs 3 pour KNN
-- ✅ Meilleur rappel sur la classe maligne : **95%** vs 93%
-
-> Dans un contexte médical, minimiser les faux négatifs est critique car cela représente des tumeurs malignes non détectées.
-
----
-
-## 🔧 Technologies
-
-![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat&logo=python&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-latest-F7931E?style=flat&logo=scikit-learn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-latest-150458?style=flat&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-latest-013243?style=flat&logo=numpy&logoColor=white)
+</details>
