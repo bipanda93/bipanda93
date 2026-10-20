@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  📧 <a href="mailto:bipandaf@gmail.com">bipandaf@gmail.com</a>  ·  <a href="www.linkedin.com/in/franck-bipanda-13392372">LinkedIn</a>  ·  📍 Île-de-France  ·  🟢 Disponible en CDI
+  📧 <a href="mailto:bipandaf@gmail.com">bipandaf@gmail.com</a>  ·  <a href="www.linkedin.com/in/franck-bipanda-13392372/">LinkedIn</a>  ·  📍 Île-de-France  ·  🟢 Disponible en CDI
 </p>
 
 ---
