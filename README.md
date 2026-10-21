@@ -32,7 +32,7 @@
 
 `Airbyte` `Snowflake` `dbt` `Airflow 3` `GitHub Actions` `Power BI`
 
-**4 sources · 10 modèles dbt · 33 tests · Bronze / Silver / Gold · CI dbt isolée · alertes Slack · rapport Power BI 5 pages · 44 décisions d'architecture**
+**4 sources · 10 modèles dbt · 33 tests · Bronze / Silver / Gold · CI dbt isolée · alertes Slack · rapport Power BI 5 pages · 45 décisions d'architecture**
 
 Segmentation clients RFM, analyse de panier en SQL (support, confiance, lift), taxonomie de 29 rayons sur 578 000 produits, 1,5 million de transactions, suivi des ventes face à l'inflation INSEE.
 
